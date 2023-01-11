@@ -1,0 +1,115 @@
+/* Core Components */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #141416;
+    overflow: hidden;
+    color: #141416;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+}
+
+/* End Core */
+/* Background Components */
+
+
+/* End Background */
+/* Login Components */
+
+::placeholder {
+    color: #141416;
+}
+
+form {
+    z-index: 2;
+    width: 28%;
+    height: 50%;
+    margin: 10% 36%;
+    background: linear-gradient(0deg, rgba(20,20,22,0.74) 0%, rgba(20,20,22,0.74) 40%, rgba(202,254,1,0.54) 100%);
+    border-radius: 18px;
+    box-shadow: 0 3px 30px rgba(202, 254, 1, 0.05);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 2px solid rgba(202, 254, 1, 0.1);
+    border-bottom: none;
+    border-top: 2px solid rgba(202, 254, 1, 0.7);
+}
+
+h1 {
+    font-size: 42px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+fieldset {
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 5% 0;
+}
+
+input[type=text], input[type=password]{
+    width: 50%;
+    height: 7%;
+    margin: 10px 25%;
+    font-size: 20px;
+    border: 2px solid rgba(202, 254, 1, 0.1);
+    border-radius: 5px;
+    background-color: transparent;
+    color: #141416;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 0 12px #141416;
+}
+
+input[type=submit]{
+    width: 30%;
+    margin: 30% 35%;
+    height: 7%;
+    background-color: #cafe01;
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid rgba(202, 254, 1, 0.1);
+    font-size: 26px;
+    box-shadow: 0 0 20px #cafe01;
+}
+
+/* End Login */
+/* Appropriated Components */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #cafe01;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+/* End Appropriated */

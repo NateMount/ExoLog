@@ -1,0 +1,68 @@
+/* Page Content*/
+
+.banner{
+    margin: 20vh 20vw 5vh 20vw;
+    padding: 0;
+    display: flex;
+    width: 60vw;
+    height: 24vh;
+}
+
+.banner h1{
+    margin: 0px 10px;
+    padding: 0px 10px;
+    font-size: 260px;
+    font-family: aquire;
+    cursor: default;
+    background-color: #cafe01;
+    color:#010201;
+    width: 50%;
+    text-decoration: underline;
+}
+
+.banner h2{
+    padding: 0;
+    margin: 0;
+    font-size: 260px;
+    font-family: aquire;
+    cursor: default;
+    width: 50%;
+}
+
+.options {
+    width: 39%;
+    margin: 0 30.5%;
+    align-items: center;
+}
+
+.options a {
+    margin: 1vw;
+    padding: 1vh 2vw;
+    width: 10vw;
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 6px;
+    border: 3px #cafe01 solid;
+    transition: 0.25s;
+}
+
+.info {
+    color: #010201;
+    background-color: #cafe01;
+}
+
+.info:hover {
+    background-color: #fff;
+    border-color: #eee;
+}
+
+.lib {
+    color: #cafe01;
+}
+
+.lib:hover {
+    color: #fff;
+    border-color: #eee;
+}
+
+/* End Page */

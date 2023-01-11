@@ -1,0 +1,152 @@
+/* Core Components */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, #010301 0%, #1A1B1A 100%);
+    overflow: hidden;
+    color: #cafe01;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/* End Core */
+/* Register Box Components */
+
+.register-box {
+    width: 30%;
+}
+
+.reg-head {
+    width: 100%;
+    display: flex;
+    height: 10%;
+    margin-bottom: 45%;
+}
+
+.logo-wrap{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.logo-wrap img {
+    height: 50%;
+    align-self: center;
+    margin-left: 20%;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #cafe01;
+    font-size: 20px;
+    align-self: center;
+    padding: 10px;
+    border:#cafe01 2px solid;
+    border-radius: 5px;
+    margin-left: 20%;
+    transition: 0.25s;
+}
+
+.login-btn:hover {
+    color: #fff;
+    border-color: #eee;
+}
+
+form {
+    width: 100%;
+}
+
+.acc-head {
+    width: 68%;
+    margin-left: 16%;
+}
+
+fieldset {
+    border: none;
+    width: 70%;
+    margin: 7% 15%;
+}
+
+.form-control {
+    padding: 0 5%;
+    background: transparent;
+    border: none;
+    border-bottom: 3px #cafe01 solid;
+    color: #cafe01;
+    width: 100%;
+    height: 5%;
+    font-size: 26px;
+    overflow-y: visible;
+    outline: none;
+}
+
+.isInvalid {
+    border-bottom: 3px #C23721 solid;
+}
+
+.submit {
+    width: 50%;
+    height: 5%;
+    margin: 15% 25%;
+    font-size: 26px;
+    background-color: #cafe01;
+    border: 1px;
+    border-radius: 5px;
+}
+
+/* End Register Box */
+/* Info Box Components */
+
+@media (min-width:700px){
+    .info-box{
+        width: 70%;
+        background-color: #B4E104;
+        overflow: hidden;
+    }
+
+    .info-box img {
+        width: 66%;
+        height: 80%;
+        margin-left: 17%;
+        margin-top: 5%;
+        pointer-events: none;
+    }
+}
+
+/* End Info Box */
+/* Appropriated Components */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 3px #cafe01 solid ;
+  -webkit-text-fill-color: #cafe01;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+/* End Appropriated */

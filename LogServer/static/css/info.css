@@ -1,0 +1,35 @@
+/* General Components */
+
+p {
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 50%;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+/* End General */
+/* Wrapper Components */
+
+.wrapper{
+    width: 90vw;
+    margin-left: 5vw;
+    overflow: auto;
+}
+
+/* End Wrapper*/
+/* Overview Components */
+
+/* End Overview */
+/* How Components */
+
+/* End How */
+/* Stat Components */
+
+/* End Stat */
+/* OpenSource Components */
+
+/* End OpenSource */

@@ -1,0 +1,48 @@
+/* General Components */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141416;
+    color: #cafe01;
+    overflow: hidden;
+}
+
+/* End General */
+/* Content Wrapper Components */
+
+.content_wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* End Content Wrapper */
+/* Sidebar Components */
+
+.sidebar {
+    width: 3%;
+    height: 100%;
+    background-color: #cafe01;
+    position: absolute;
+    display: block;
+}
+
+.sb-items {
+    height: 75vh;
+    width: 100%;
+    margin-bottom: 18vh;
+}
+
+.sb-item {
+    list-style: none;
+}
+
+.sidebar img {
+    width: 70%;
+    margin: 25% 15%;
+}
+
+/* End Sidebar */

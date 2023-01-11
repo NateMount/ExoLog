@@ -1,0 +1,99 @@
+/* Core Components */
+
+* {
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, #010301 0%, #1A1B1A 100%);
+    overflow: hidden;
+    color: #cafe01;
+}
+
+/* End Core */
+/* HotBar Content */
+
+.hotbar {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+}
+
+.hb_logo {
+    align-self: flex-start;
+    margin: 0 2.5vw;
+    width:85.5vw;
+    display: flex;
+    height: 100%;
+}
+
+.hb_logo h1 {
+    font-size: 32px;
+    font-family: sans-serif;
+    cursor:default;
+    text-decoration: underline;
+    display: flex;
+}
+
+.hb_logo img {
+    height: auto;
+    width: 3vw;
+    padding: 1vh;
+    pointer-events: none;
+}
+
+.hb_opt {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    font-family: Arial;
+    height:100%;
+    width: 8vw;
+    align-items: center;
+}
+
+.hb_opt li {
+    margin: 0;
+    align-self: flex-end;
+}
+
+.hb_opt img {
+    height: auto;
+    width: 3vw;
+    margin: 0;
+    padding: 1vh;
+    transition: 0.25s;
+    border: #010201 2px solid;
+}
+
+.hb_opt img:hover{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(12px);
+    opacity: 0.92;
+    border: #1a1b1a 2px solid;
+    border-radius: 10px;
+}
+
+/* End HotBar */
+/* Page Content */
+
+.content {
+    margin: 0;
+    height: 92vh;
+}
+
+/* End Page */
+/* Approprieted Components */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+/* End Appropriated */
