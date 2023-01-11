@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+        <title>{{ title }}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="{{ desc }}">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="og:title" content="ExoLog">
+        <meta name="og:url" content="{{ url }}">
+        <meta name="og:image" content="{{ url_for('static', filename='icon/logo.png') }}">
+        <meta name="og:site_name" content="ExoLog">
+        <meta name="og:description" content="{{ desc }}">
+
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/core.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/{}.css'.format(style)) }}">
+    </head>
+    <style>
+        @font-face {
+            font-family: aquire;
+            src: url("{{ url_for('static', filename='fonts/Aquire.otf') }}");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <body>
+
+        <div class="hotbar">
+            <div class="hb_logo" class="noselect">
+                <a href="/"><img src="{{ url_for('static', filename='icon/logo.png') }}"></a>
+                <h1 style="font-family: 'aquire'" class="noselect">ExoLog</h1>
+            </div>
+            <ul class="hb_opt">
+                <li><a href="plans"><img alt="Pricing" src="{{ url_for('static', filename='icon/plans.png') }}"></a></li>
+                <li><a href="register"><img alt="Login" src="{{ url_for('static', filename='icon/user.png') }}"></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            {{ content }}
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+        <title>{{ name }}'s Workshop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="My Workshop">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="og:title" content="ExoLog">
+        <meta name="og:url" content="ExoLog.io">
+        <meta name="og:image" content="{{ url_for('static', filename='icon/logo.png') }}">
+        <meta name="og:site_name" content="ExoLog">
+        <meta name="og:description" content="My Workshop">
+
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/user.css') }}">
+    </head>
+    <style>
+        @font-face {
+            font-family: aquire;
+            src: url("{{ url_for('static', filename='fonts/Aquire.otf') }}");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <body>
+        <div class="content_wrapper">
+            <div class="sidebar">
+                <ul class="sb-items">
+                    <li class="sb-item"><a href="/home"><img src="{{ url_for('static', filename='icon/lib.png') }}" alt="Info"></a></li>
+                    <li class="sb-item"><a href="/projects"><img src="{{ url_for('static', filename='icon/projects.png') }}" alt="Projects"></a></li>
+                    <li class="sb-item"><a href="/orginization"><img src="{{ url_for('static', filename='icon/org.png') }}" alt="Orginization"></a></li>
+                    <li class="sb-item"><a href="/user-config"><img src="{{ url_for('static', filename='icon/uconfig.png') }}" alt="User Config"></a></li>
+                </ul>
+                <a href="/config"><img src="{{ url_for('static', filename='icon/config.png') }}"></a>
+            </div>
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+    </body>
+</html>

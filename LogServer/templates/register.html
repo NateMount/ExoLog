@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Create An Account on ExoLog">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="og:title" content="ExoLog">
+        <meta name="og:url" content="https://ExoLog.io/register">
+        <meta name="og:image" content="{{ url_for('static', filename='icon/logo.png') }}">
+        <meta name="og:site_name" content="ExoLog">
+        <meta name="og:description" content="Join ExoLog">
+
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+    </head>
+    <style>
+        @font-face {
+            font-family: aquire;
+            src: url("{{ url_for('static', filename='fonts/Aquire.otf') }}");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+    </script>
+    <body>
+        <div class="content">
+            <div class="register-box">
+                <div class="reg-head">
+                    <a href="/" class="logo-wrap noselect"><img src="{{ url_for('static', filename='icon/logo.png') }}"></a>
+                    <a class="login-btn noselect" href="{{ url_for('login') }}" style="font-family: 'aquire'">Sign In</a>
+                </div>
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    <h1 class="acc-head noselect" style="font-family: 'aquire'">Create an account</h1>
+                    <fieldset class="form-group">
+                        <dir class="form-group">
+                            {% if not errors %}
+                                {{ form.username(class="form-control", placeholder="Username", autocomplete="Username",spellcheck="false", value=name) }}
+                            {% else %}
+                                {{ form.username(class="form-control isInvalid", placeholder="Username", autocomplete="Username",spellcheck="false") }}
+                            {% endif %}
+                        </dir>
+                        <dir class="form-group">
+                            {{ form.passwd(class="form-control", placeholder="Password", type="password", autocomplete="Password", spellcheck="false") }}
+                        </dir>
+                        {{ form.submit(class="submit", style="font-family: 'aquire'") }}
+                    </fieldset>
+                </form>
+            </div>
+            <div class="info-box noselect">
+                <img src="{{ url_for('static', filename='icon/logging-guy.svg') }}">
+            </div>
+        </div>
+    </body>
+
+</html>

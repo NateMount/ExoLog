@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Create An Account on ExoLog">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="og:title" content="ExoLog">
+        <meta name="og:url" content="https://ExoLog.io/login">
+        <meta name="og:image" content="{{ url_for('static', filename='icon/logo.png') }}">
+        <meta name="og:site_name" content="ExoLog">
+        <meta name="og:description" content="Join ExoLog">
+
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    </head>
+    <style>
+        @font-face {
+            font-family: aquire;
+            src: url("{{ url_for('static', filename='fonts/Aquire.otf') }}");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+    </script>
+    <body>
+
+        <div class=".content">
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <h1 class="acc-head noselect" style="font-family: 'aquire'">Login</h1>
+                <fieldset class="form-group">
+                    <dir class="form-group">
+                        {{ form.username(class="form-control", placeholder="Username", autocomplete="Username",spellcheck="false") }}
+                    </dir>
+                    <dir class="form-group">
+                        {{ form.passwd(class="form-control", placeholder="Password", type="password", autocomplete="Password", spellcheck="false") }}
+                    </dir>
+                    {{ form.submit(class="submit", style="font-family: 'aquire'") }}
+                </fieldset>
+            </form>
+        </div>
+
+    </body>
+</html>
