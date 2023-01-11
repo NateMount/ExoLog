@@ -1,0 +1,190 @@
+[
+  {
+    name: Python 3.9,
+    pos: [0, 0],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", false]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Python/ExoLog-3.9",
+    install: "pip3 install ExoLog-v9"
+  },
+    {
+    name: Python 3.10,
+    pos: [33.3333, 0],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Python/ExoLog-3.10",
+    install: "pip3 install ExoLog-v10"
+  },
+  {
+    name: Python 3.11,
+    pos: [66.6667, 0],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Python/ExoLog-3.11",
+    install: "pip3 install ExoLog-v11"
+  },
+  {
+    name: Java 11,
+    pos: [0, 700],
+    components: [
+      ["log", true],
+      ["autolog", false],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Java/ExoLog11",
+    install: "maven ..."
+  },
+  {
+    name: Java 14,
+    pos: [33.3333, 700],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Java/ExoLog14",
+    install: "pip3 install ExoLog-v10"
+  },
+  {
+    name: JavaScript,
+    pos: [66.6667, 700],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/JavaScript/ExoLog",
+    install: "npm install ExoLog"
+  },
+  {
+    name: .NET,
+    pos: [0, 1400],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/.NET/ExoLog",
+    install: "Install Package ExoLog"
+  },
+  {
+    name: Ruby 2.7,
+    pos: [33.3333, 1400],
+    components: [
+      ["log", true],
+      ["autolog", false],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Ruby/ExoLog-2.7",
+    install: "gem install ExoLog"
+  },
+  {
+    name: Ruby 3.0,
+    pos: [66.6667, 1400],
+    components: [
+      ["log", true],
+      ["autolog", false],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Ruby/ExoLog-3",
+    install: "gem install ExoLog3"
+  },
+  {
+    name: Go,
+    pos: [0, 2100],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Go/ExoLog",
+    install: "go get github.com/ExoLogAPI/API/Go"
+  },
+  {
+    name: Rust,
+    pos: [33.3333, 2100],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Rust/ExoLog",
+    install: "cargo: name= \"ExoLog\" version= \"*\""
+  },
+  {
+    name: Lua,
+    pos: [66.6667, 2100],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true],
+      ["apples", true],
+      ["memlog", true],
+      ["delta", false],
+      ["zombie", true],
+      ["root", false],
+      ["axe", false],
+      [":)", true],
+      ["mount", false]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Lua/ExoLog",
+    install: "luarocks install ExoLog"
+  },
+  {
+    name: Objective-C,
+    pos: [0, 2800],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Objective-C/ExoLog",
+    install: "pod 'EXOLOG'"
+  },
+  {
+    name: Swift,
+    pos: [33.3333, 2800],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/Swift/ExoLog",
+    install: "pod 'EXOLOG'"
+  },
+  {
+    name: C,
+    pos: [66.6667, 2800],
+    components: [
+      ["log", true],
+      ["autolog", true],
+      ["snapshot", true],
+      ["errlog", true]
+    ],
+    git: "https://github.com/ExoLogAPI/API/C/ExoLog",
+    install: "git clone https://github.com/ExoLogAPI/API/C/ExoLog"
+  }
+]
